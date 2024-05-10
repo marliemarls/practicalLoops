@@ -6,3 +6,15 @@
 // if divisible by both 3 && 5, it should print FizzBUzz
 //every other number, should just print out as is
 
+//create function fizzBuzz
+//will not take in any parameters, and within the function, we will have a loop
+//loop will iterate from 1 let i=1; i <= 100
+//within the loop we are checking to see if the number is divisible by 3, 5 or both 3 & 5; 
+//if the number does not fall under either of those circumstances, it will print as is
+// otherwise, the number will be changed to fizz, buzz or fizzBuzz
+
+function fizzBuzz(){
+    for(let i = 1; i <= 100; i++){
+        
+    }
+}
