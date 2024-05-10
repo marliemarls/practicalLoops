@@ -14,20 +14,22 @@
 // otherwise, the number will be changed to fizz, buzz or fizzBuzz
 
 function fizzBuzz(){
-    for(let i = 1; i <= 100; i++){
+    for(let i = 1; i < 101; i++){
+        let realNum = i;
         if(i % 3 === 0) {
             console.log("Fizz")
         } else if(i % 5 === 0) {
             console.log("Buzz")
-        } else if((i % 3) && (i % 5) === 0) {
+        } else if((i % 3) && (i % 5) === 0) { /*I could have used 15 but i wanted to showcase my use of the && operator*/
             console.log("FizzBuzz")
         } else {
-            console.log(`${i}`)
+            console.log(i)
         }
+        
     }
 }
-
-console.log(fizzBuzz())
+//i realized that when i console.logged my function, it was showing up as undefined, so i just invoked it and it worked perfectly
+fizzBuzz()
 
 //part 2: prime time
 
@@ -39,8 +41,14 @@ console.log(fizzBuzz())
 //to check if a number is prime, we should compare
 
 function isPrime(n){
-    if((n % n) === 0)
+    if((n / n) && (n / 1) && (n / 2)) {
+        console.log("this number is not a prime ")
+    } else if(){
+        console.log("this number is a prime number")
+    }
+
 }
 
+isPrime(3)
 
 //part 3: feeling loopy 
