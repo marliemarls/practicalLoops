@@ -29,3 +29,18 @@ function fizzBuzz(){
 
 console.log(fizzBuzz())
 
+//part 2: prime time
+
+//the function should take in a number which will be named num or n
+//prime number: a number that is only divisible by itself and 1
+//we are checking to find the next prime number in sequence
+// thus the function should give the next prime number up
+//if the number given is 4, it should log 5, if n is 5
+//to check if a number is prime, we should compare
+
+function isPrime(n){
+    if((n % n) === 0)
+}
+
+
+//part 3: feeling loopy 
