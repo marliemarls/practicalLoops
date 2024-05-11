@@ -36,19 +36,34 @@ fizzBuzz()
 //the function should take in a number which will be named num or n
 //prime number: a number that is only divisible by itself and 1
 //we are checking to find the next prime number in sequence
-// thus the function should give the next prime number up
-//if the number given is 4, it should log 5, if n is 5
-//to check if a number is prime, we should compare
+//the function will work by taking in a number and then iterating from that number to the next prime number. 
+//in that case, the index will not begin at 0, rather it will begin at the given number
+//once the for loop iterates to the next number, it will check to see if it is a prime number through the use of conditions that must be met. if conditions are not met, the loop will continue to iterate, but once it finds the next prime, the function will complete and return the value.
 
-function isPrime(n){
-    if((n / n) && (n / 1) && (n / 2)) {
-        console.log("this number is not a prime ")
-    } else if(){
-        console.log("this number is a prime number")
+// function isPrime(n){
+//     if((n / n === 1) && (n / 1 === n) && (n % 2 === 0)) {
+//         for(let i = n;  ;i++)
+//         console.log("this number is not a prime ")
+        
+//     } else{
+//         console.log("this number is a prime number")
+//     }
+
+// }
+
+// isPrime(3)
+
+function isPrime(num){
+    for(let i = num + 1; i <= num + 10; i++){
+        if((i / i === 1) && (i / 1 === i) && (i % 2 !== 0)){
+            return i
+        }
     }
-
 }
 
-isPrime(3)
+console.log(isPrime(7))
+
+
+
 
 //part 3: feeling loopy 
