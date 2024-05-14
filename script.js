@@ -16,12 +16,12 @@
 function fizzBuzz(){
     for(let i = 1; i < 101; i++){
         let realNum = i;
-        if(i % 3 === 0) {
-            console.log("Fizz")
+        if ((i % 3) && (i % 5) === 0) {
+            console.log("FizzBuzz")
         } else if(i % 5 === 0) {
             console.log("Buzz")
-        } else if((i % 3) && (i % 5) === 0) { /*I could have used 15 but i wanted to showcase my use of the && operator*/
-            console.log("FizzBuzz")
+        } else if(i % 3 === 0) { /*I could have used 15 but i wanted to showcase my use of the && operator*/
+            console.log("Fizz")
         } else {
             console.log(i)
         }
@@ -54,16 +54,36 @@ fizzBuzz()
 // isPrime(3)
 
 function isPrime(num){
-    for(let i = num + 1; i <= num + 10; i++){
-        if((i / i === 1) && (i / 1 === i) && (i % 2 !== 0)){
+    for(let i = num; i < Math.sqrt(num); i++){
+        if(num % i === 0){
+            return false;
+        } else{
             return i
         }
     }
 }
 
-console.log(isPrime(7))
 
 
+console.log(isPrime(5))
 
 
-//part 3: feeling loopy 
+// //part 3: feeling loopy 
+
+// function loopThruStrings(str) {
+//     let arr = [];
+//     for(let i = 0; i <= str.length; i++) {
+//         // let newArray = [];
+//         if(str[i] === '\n' ) {
+//             const newStr = '';
+//         } else {
+//             const newArr =+ str[i];
+//             arr =+ newArr
+//         }
+//         // return arr
+//     }
+// }
+
+// let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+
+// console.log(loopThruStrings(str))
