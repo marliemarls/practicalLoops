@@ -39,6 +39,8 @@ fizzBuzz()
 //in that case, the index will not begin at 0, rather it will begin at the given number
 //once the for loop iterates to the next number, it will check to see if it is a prime number through the use of conditions that must be met. if conditions are not met, the loop will continue to iterate, but once it finds the next prime, the function will complete and return the value.
 
+//below here is my actual work and underneath is the code along with jose
+
 // function isPrime(n){
 //     if((n / n === 1) && (n / 1 === n) && (n % 2 === 0)) {
 //         for(let i = n;  ;i++)
