@@ -15,7 +15,6 @@
 
 function fizzBuzz(){
     for(let i = 1; i < 101; i++){
-        let realNum = i;
         if ((i % 3) && (i % 5) === 0) {
             console.log("FizzBuzz")
         } else if(i % 5 === 0) {
@@ -53,19 +52,30 @@ fizzBuzz()
 
 // isPrime(3)
 
-function isPrime(num){
-    for(let i = num; i < Math.sqrt(num); i++){
-        if(num % i === 0){
+function checkPrime(num){
+    let i = 2;
+    while(i < num){
+        if(num % i === 0){ 
             return false;
-        } else{
-            return i
         }
+        i++
     }
+    return true;
+}
+
+function findNextNum(startingNum){
+    let starting = startingNum + 1;
+    while(starting){
+        if(checkPrime(starting)) {
+            break;
+        }
+        starting++;
+    }
+    return starting;
 }
 
 
-
-console.log(isPrime(5))
+console.log(findNextNum(9))
 
 
 // //part 3: feeling loopy 
