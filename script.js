@@ -106,5 +106,22 @@ function loopThruStrings(str){
     return splitArr
 }
 
-console.log(loopThruStrings(str))
-console.log(loopThruStrings(newStr))
+let newSplitArr = loopThruStrings(str)
+// console.log(newSplitArr)
+
+function createArr(arr) {
+    let arrays = []
+    for(let i = 0; i < arr.length-1; i++){
+        const newArr = [arr[i]]
+        arrays.push(newArr)
+        // console.log(newArr)
+    }
+    return arrays
+}
+
+const nestedArr = createArr(newSplitArr)
+
+const cell1 = nestedArr[0]
+const cell2 = nestedArr[1]
+const cell3 = nestedArr[2]
+const cell4 = nestedArr[3] 
