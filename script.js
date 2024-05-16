@@ -85,17 +85,24 @@ console.log(findNextNum(9))
 // function loopThruStrings(str) {
 //     let arr = [];
 //     for(let i = 0; i <= str.length; i++) {
-//         // let newArray = [];
-//         if(str[i] === '\n' ) {
-//             const newStr = '';
-//         } else {
-//             const newArr =+ str[i];
-//             arr =+ newArr
-//         }
-//         // return arr
+//         const newArray = [];
+//         let newStr = '';
+//         if( str[i] !== "'\n'"){
+//             newStr += str[i]
+//             console.log(newStr)
+//             // newArray.push(newStr)
+//         } 
+//         // console.log(newArray)
 //     }
+//     // return newArray
 // }
 
-// let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-// console.log(loopThruStrings(str))
+// not really sure if im doing this right 
+function loopThruStrings(str){
+    let splitArr = str.split("\n");
+    return splitArr
+}
+
+console.log(loopThruStrings(str))
