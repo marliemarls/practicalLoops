@@ -14,10 +14,12 @@ let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Bl
 
 function createNewCells(str) {
     let splitArr = str.split("\n")
+    let cells = []
     for(let i = 0; i <= splitArr.length-1; i++){
-        let cells = splitArr[i].split(",");
-        console.log(cells.join(" "))
+        cells.push( splitArr[i].split(",").join(" ") + ", " )
+        console.log(cells)
     }
+    return cells
 }
 
 let cellsCreated = createNewCells(str)
