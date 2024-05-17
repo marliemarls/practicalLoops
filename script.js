@@ -107,12 +107,12 @@ function loopThruStrings(str){
 }
 //put the return value of the loopThruStrings function into a variable so i can further manipulate it in my next funtion
 let newSplitArr = loopThruStrings(str)
-// console.log(newSplitArr)
+console.log(newSplitArr)
 
 //here I wanted to make every string in the array, into its own array so that I can localize each "row" with the index 
 function createArr(arr) {
     let arrays = []
-    for(let i = 0; i < arr.length-1; i++){
+    for(let i = 0; i < arr.length; i++){
         const newArr = [arr[i]]
         arrays.push(newArr)
         // console.log(newArr)
@@ -123,9 +123,11 @@ function createArr(arr) {
 //declared a variable that holds the return value of createArr
 const nestedArr = createArr(newSplitArr)
 
-
+console.log(nestedArr)
 //once that was completed, I was able to create the 4 cell variables with the use of the array I just created and the use of indexes.
-const cell1 = nestedArr[0]
-const cell2 = nestedArr[1]
-const cell3 = nestedArr[2]
-const cell4 = nestedArr[3] 
+const cell1 = nestedArr[1]
+const cell2 = nestedArr[2]
+const cell3 = nestedArr[3]
+const cell4 = nestedArr[4]
+
+console.log(cell1)
